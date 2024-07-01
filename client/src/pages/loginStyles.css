@@ -1,0 +1,97 @@
+/* html, body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+} */
+
+html, body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background: linear-gradient(90deg, #d21b1b8d,#72066da9,#09117aa6);
+    /*Red-purple-blue gradient, medium saturation*/
+    /* background: linear-gradient(90deg, #0337af93,#19045d); */
+    /* Light blue - Dark blue gradient */
+    /* background: linear-gradient(90deg, #792fdaad,#031b32e6);  */
+    /* Purple-blue gradient*/
+}
+
+#loginPage{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* background: linear-gradient(90deg, #0337af93,#19045d);  */
+    /* Light blue - Dark blue gradient */
+    /* background: linear-gradient(90deg, #792fdaad,#031b32e6);  */ 
+    /* Purple-blue gradient */
+}
+
+.loginDiv{
+    background-color: rgba(218, 221, 218, 0.678);
+
+    margin-top: 5vh;
+
+    height: fit-content;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+
+    width: fit-content;
+    padding-left: 10vw;
+    padding-right: 10vw;
+
+    border-radius: 20px;
+    
+    display: flex;
+
+    align-items: center;
+
+}
+
+.loginDiv h1{
+    /* align-content: center;
+    justify-content: center; */
+    text-align: center;
+}
+
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#loginInput{
+    border-radius: 5px;
+    border-style: none;
+}
+
+#loginInput:hover{
+    color: grey;
+}
+
+.submitButton{
+    width: fit-content;
+    height: fit-content;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    margin-top: 3vh;
+
+    color: aliceblue;
+
+    border-radius: 12px;
+    border-style: hidden;
+    border-width: 1px;
+
+    background-color: rgb(40, 94, 47);
+}
+
+.submitButton:hover{
+    background-color: #19045d;
+}
