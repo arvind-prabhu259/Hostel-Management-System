@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route} from "react-router-dom";
-
+import Header from './components/header';
 // import PrivateRoute from './components/PrivateRoute';
 
 import Layout from "./pages/layout";
@@ -17,37 +17,33 @@ import Login from "./pages/login";
 function App(){
     return (
         <BrowserRouter>
+        <Header />
+        <main>
             <Routes>
-                <Route index element={<Login />} />
-                <Route path="/" element={<Layout />}>
+                    <Route ind      ex element={<Login />} />
+                    <Route path="/" element={<Layout />} />
                     <Route path="home" element={<Home />} />
                     <Route path="booking" element={<Booking />} />
                     <Route path="cancel" element={<Cancel />} />
                     <Route path="hostel" element={<Hostel />} />
                     <Route path="room" element={<Room />} />
                     <Route path = "*" element = {<NoPage/>}/>
-                </Route>
             </Routes>
-        </BrowserRouter> 
-        // <BrowserRouter>
-        //     <Routes>
-        //         <Route path='/' element={<Login/>}/>
-        //         <Route path='/home' element={<Home/>}/>
-        //     </Routes>
-        // </BrowserRouter>
+        </main>
+        </BrowserRouter>
       );
 }
 export default App;
-{/* <BrowserRouter>
-    <Routes>
-        <Route path="/" element={<Layout />}>
-            <Route index element={<Login />} />
-            <Route path="home" element={<Home />} />
-            <Route path="booking" element={<Booking />} />
-            <Route path="cancel" element={<Cancel />} />
-            <Route path="hostel" element={<Hostel />} />
-            <Route path="room" element={<Room />} />
-            <Route path = "*" element = {<NoPage/>}/>
-        </Route>
-    </Routes>
-</BrowserRouter>  */}
+        // <BrowserRouter>
+        //     <Routes>
+        //         <Route index element={<Login />} />
+        //         <Route path="/" element={<Layout />}>
+        //             <Route path="home" element={<Home />} />
+        //             <Route path="booking" element={<Booking />} />
+        //             <Route path="cancel" element={<Cancel />} />
+        //             <Route path="hostel" element={<Hostel />} />
+        //             <Route path="room" element={<Room />} />
+        //             <Route path = "*" element = {<NoPage/>}/>
+        //         </Route>
+        //     </Routes>
+        // </BrowserRouter>
