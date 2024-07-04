@@ -7,11 +7,11 @@ const Header=()=>(
     <header className='header'>
         <nav>
             <ul className='nav-list'>
-                <li>HOSTEL MANAGEMENT SYSTEM</li>
+                <li id='header-bar-site-name'>HOSTEL MANAGEMENT SYSTEM</li>
                 <li><DropDownItem path={"/home"} text={"Home"}/></li>
-                <li><DropDownItem path={"/hostel"} text={"Hostel"}/></li>
+                <li><DropDownItem path={"/hostel"} text={"Hostels"}/></li>
                 <li><DropDownItem path={"/room"} text={"View Rooms"}/></li>
-                <li><DropDownItem path={"/booking"} text={"Book a room"}/></li>
+                <li><DropDownItem path={"/booking"} text={"Booking"}/></li>
                 <li><DropDownItem path={"/cancel"} text={"Cancel booking"}/></li>
             </ul>
         </nav>
