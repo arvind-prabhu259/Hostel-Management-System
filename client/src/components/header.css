@@ -1,18 +1,12 @@
 .header {
     text-align: center;
     background-color: #f8f9fa;
-    /* background: linear-gradient(90deg, #0337af93,#19045d); */
-    /* width: fit-content; */
-    /* padding: 1em; */
     border-bottom: 2px solid #000000f6;
 }
 
 #header-bar-site-name{
-    /* text-decoration: line-through rgba(0, 0, 255, 0.581) dotted  5px; */
     font-size: larger;
     text-shadow: 2px 2px #0000004f;
-    /* text-decoration: underline blue solid  2px; */
-    /* list-style: none; */
 }
 
 .nav-list{

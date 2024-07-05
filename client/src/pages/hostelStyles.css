@@ -1,0 +1,33 @@
+.hostel-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}   
+
+.table-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.hostel-table{
+    border-collapse: collapse;
+    width: 80%;
+    background-color: aquamarine;
+}
+
+.hostel-table th, .hostel-table td{
+    border: 2px solid black;
+    text-align: center;
+    padding: 8px;
+}
+
+.hostel-table th{
+    background-color: rgb(37, 69, 102);
+    color: azure;
+    font-weight: bold;
+}
+
+.hostel-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
