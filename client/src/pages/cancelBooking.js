@@ -1,4 +1,5 @@
 import {useState, useEffect} from 'react'
+import Header from '../components/header';
 const Cancel = () =>{
     const [message, setMessage] = useState("");
     const [confirmation, setConfirmation] = useState("");
@@ -28,6 +29,7 @@ const Cancel = () =>{
 
     return(
         <div>
+            <Header />
             <h1>Cancel Booking.</h1>
             <form onSubmit={handleSubmit}>
                 <label><input type='checkbox' onChange={(e)=>{setConfirmation(e.target.value)}}/> Confirm cancellation</label><br/>

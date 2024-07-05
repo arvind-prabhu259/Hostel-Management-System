@@ -1,6 +1,11 @@
+import Header from "../components/header";
+
 const NoPage = () => {
     return(
-    <h1>Error 404</h1>
+        <div>
+            <Header />
+            <h1>Error 404</h1>
+        </div>
     );
 };
   

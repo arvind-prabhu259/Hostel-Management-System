@@ -1,0 +1,12 @@
+body{
+    width: 100%;
+    height: 100%;
+    /* background-color:#d3d3d3; */
+    /* Gradients: */
+    /* background: linear-gradient(90deg, #d21b1b8d,#72066da9,#09117aa6); */
+    /*Red-purple-blue gradient, medium saturation*/
+    background: linear-gradient(90deg, #0337af93,#19045d);
+    /* Light blue - Dark blue gradient */
+    /* background: linear-gradient(90deg, #792fdaad,#031b32e6);  */
+    /* Purple-blue gradient*/
+}

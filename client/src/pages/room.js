@@ -1,4 +1,5 @@
 import {useState, useEffect} from 'react'
+import Header from '../components/header';
 
 const Room = () =>{
     const [backendData, setBackendData] = useState([{}]);
@@ -22,6 +23,7 @@ const Room = () =>{
 
     return(
         <div>
+            <Header />
             <h1>View Rooms.</h1>
             <form onSubmit={handleForm}>
                 <label>Hostel building: </label>

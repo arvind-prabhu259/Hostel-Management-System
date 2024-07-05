@@ -1,4 +1,6 @@
 import {useState, useEffect} from 'react'
+import Header from '../components/header';
+
 const Hostel = () =>{
     const [backendData, setBackendData] = useState([{}])
     useEffect(() => {
@@ -12,6 +14,7 @@ const Hostel = () =>{
     }, []);
     return(
         <div>
+            <Header />
             <h1>View Hostel Buildings.</h1>
             <table>
                 <tr>

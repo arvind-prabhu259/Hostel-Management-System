@@ -8,6 +8,7 @@ const Header=()=>(
         <nav>
             <ul className='nav-list'>
                 <li id='header-bar-site-name'>HOSTEL MANAGEMENT SYSTEM</li>
+                {/* <li><DropDownItem path={"/login"} text={"Login"}/></li> */}
                 <li><DropDownItem path={"/home"} text={"Home"}/></li>
                 <li><DropDownItem path={"/hostel"} text={"Hostels"}/></li>
                 <li><DropDownItem path={"/room"} text={"View Rooms"}/></li>

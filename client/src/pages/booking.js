@@ -1,4 +1,5 @@
 import {useState, useEffect} from 'react'
+import Header from '../components/header';
 const Booking = () =>{
     const [message, setMessage] = useState("");
     const [hostelId, setHostelId] = useState("");
@@ -24,6 +25,7 @@ const Booking = () =>{
 
     return(
         <div>
+            <Header />
             <h1>Create Booking.</h1>
             <form onSubmit={handleSubmit}>
                 <label>Hostel building: </label>

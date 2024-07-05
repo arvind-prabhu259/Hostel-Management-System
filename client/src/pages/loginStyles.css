@@ -5,22 +5,15 @@
     align-items: center;    
     justify-content: center;
 } */
-
-html, body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-body{
-    background: linear-gradient(90deg, #d21b1b8d,#72066da9,#09117aa6);
-    /*Red-purple-blue gradient, medium saturation*/
-    /* background: linear-gradient(90deg, #0337af93,#19045d); */
-    /* Light blue - Dark blue gradient */
-    /* background: linear-gradient(90deg, #792fdaad,#031b32e6);  */
-    /* Purple-blue gradient*/
-}
-
+/* 
+header{
+    opacity: 0%;
+    height: 0px;
+} */
+ 
 #loginPage{
-    height: 100vh;
-    width: 100vw;
+    /* height: 94vh;
+    width: 100vw; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,7 +33,7 @@ body{
     padding-top: 10vh;
     padding-bottom: 10vh;
 
-    width: fit-content;
+    /* width: fit-content; */
     padding-left: 10vw;
     padding-right: 10vw;
 

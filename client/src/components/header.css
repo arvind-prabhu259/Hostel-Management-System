@@ -1,6 +1,7 @@
 .header {
     text-align: center;
     background-color: #f8f9fa;
+    /* background: linear-gradient(90deg, #0337af93,#19045d); */
     /* width: fit-content; */
     /* padding: 1em; */
     border-bottom: 2px solid #000000f6;
@@ -11,6 +12,7 @@
     font-size: larger;
     text-shadow: 2px 2px #0000004f;
     /* text-decoration: underline blue solid  2px; */
+    /* list-style: none; */
 }
 
 .nav-list{
@@ -19,6 +21,8 @@
     justify-content: center;
     padding: 0;
     margin: 0;
+
+    list-style: none;
 }
 
 .nav-list li{
@@ -32,8 +36,9 @@
 
 .nav-list li a:hover{
     color: #007bff;
-    transition-duration: 0.25s;
+    transition-duration: 0.2s;
     text-decoration: underline;
+    font-weight:bolder;
 }
 
 /* 
