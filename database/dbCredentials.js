@@ -2,5 +2,6 @@ module.exports = {
     HOST:"localhost",
     USER:"root",
     PASSWORD:"password123",
-    DATABASE:"servertest"
+    DATABASE:"Hostel_Management_DB"
+    // DATABASE:"servertest"
 };

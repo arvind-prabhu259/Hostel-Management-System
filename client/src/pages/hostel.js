@@ -27,12 +27,13 @@ const Hostel = () =>{
                             <th>Total Rooms</th>
                         </tr>
                         {backendData.map((row, key) => {
+                            console.log(row);
                             return(
                             <tr key={key}>
-                                <td>{row.hostelname}</td>
-                                <td>{row.location}</td>
-                                <td>{row.availablerooms}</td>
-                                <td>{row.totalrooms}</td>
+                                <td>{row.HOSTEL_NAME}</td>
+                                <td>{row.LOCATION}</td>
+                                <td>{row.AVAILABLE}</td>
+                                <td>{row.NUM_ROOMS}</td>
                             </tr>
                             )
                         })}

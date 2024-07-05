@@ -3,7 +3,11 @@ const router = express.Router();
 const conn = require('./../../database/db');
 
 
-var session = {"email": "", "password": ""};
+var session = {
+    "rollno":"",
+    "email": "",
+    "password": ""
+};
 
 
 //Check if email address and password are valid
@@ -11,7 +15,7 @@ router.post('/login', (req, res)=>{
     const email = req.body.email;
     const password = req.body.pw;
 
-    const query = "SELECT * FROM logincreds WHERE email  = \"" + email +"\";"
+    const query = "SELECT * FROM LOGINCREDS WHERE UNAME  = \"" + email +"\";"
     conn.query(query, (err, results)=>{
         if(err){
             console.log(err);
@@ -22,14 +26,16 @@ router.post('/login', (req, res)=>{
             return res.status(401).json({status: "Invalid email or password"});
         }
 
-        const user = results[0];
-        // console.log(user);
-        if(!(password == user.pw)){
+        const db_data = results[0];
+        // console.log(db_data);
+        // console.log(results);
+        // console.log(results[0].ROLL_NO);
+        if(!(password == db_data.PW)){
             return res.status(401).json({status: "Invalid email or password"});
         }
-
-        session.email = email;
-        session.password = password;
+        session.rollno = db_data.ROLL_NO;
+        session.email = db_data.UNAME;
+        session.password = db_data.PW;
         
         res.status(200).json({status: "Logged in successfully"});
     })
@@ -38,14 +44,14 @@ router.post('/login', (req, res)=>{
 
 //get a list of available hostels
 router.get('/hostelList', (req, res)=>{
-    const query = "SELECT hostelname, location, totalrooms, availablerooms FROM hostels;";
+    const query = "CALL GET_ALL_HOSTEL_INFO;";
     conn.query(query, (err, results)=>{
         if(err){
             console.log(err);
             res.send(err);
         }else{
-            res.json(results);
-            // console.log(results);
+            res.json(results[0]);
+            console.log(results[0]);
             console.log("Hostel list retrieved successfully.");
         }
     });
