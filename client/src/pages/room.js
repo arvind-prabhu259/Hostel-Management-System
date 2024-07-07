@@ -1,5 +1,6 @@
 import {useState, useEffect} from 'react'
 import Header from '../components/header';
+import './roomStyles.css'
 
 const Room = () =>{
     const [backendData, setBackendData] = useState([{}]);
